@@ -19,6 +19,7 @@ end
 
 gem 'jquery-rails'
 gem 'rspec-rails'
+gem 'heroku'
 
 
 # To use ActiveModel has_secure_password
