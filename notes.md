@@ -32,5 +32,7 @@ update all the forms for twitter bootstap - maybe jump to a commit...
 # deploy
 add gem 'heroku' to the rails file
 move 'sqlite' to the development group
+add 'pg' to the production group
+
 
 

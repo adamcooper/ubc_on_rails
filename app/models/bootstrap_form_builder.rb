@@ -66,7 +66,7 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
 
   basic_helpers.each do |name|
     # First alias old method
-    class_eval("alias super_#{name.to_s} #{name}")
+    # class_eval("alias super_#{name.to_s} #{name}")
 
     define_method(name) do |field, *args|
       with_custom_field_error_proc do

@@ -15,7 +15,7 @@
   <tr>
     <td><%= rating.title %></td>
     <td><%= rating.stars %></td>
-    <td><%= rating.comments %></td>
+    <td><%= truncate(rating.comments, :size => 100) %></td>
     <td><%= rating.name %></td>
     <td><%= link_to 'Show', rating %></td>
     <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
@@ -26,6 +26,4 @@
 
 <br />
 
-<div class="actions">
-  <%= link_to 'New Rating', new_rating_path, :class => 'btn' %>
-</div>
+  <%= link_to 'New Rating', new_rating_path, :class => 'btn small' %>

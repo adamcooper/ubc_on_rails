@@ -9,6 +9,10 @@
 <body>
   <%= render :partial => '/partials/navigation' %>
   <div class="container">
+    <% if notice.present? %>
+    <div class="alert-message success"><p><%= notice %></p></div>
+  <%- end %>
+
 <%= yield %>
 </div>
 
