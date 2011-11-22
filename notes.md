@@ -5,6 +5,11 @@
 * show site -> http://localhost:3000
 * follow instructions
 
+# Git
+
+git init
+git add .
+git commit -m "initial commit"
 
 # Personalization for Me
 

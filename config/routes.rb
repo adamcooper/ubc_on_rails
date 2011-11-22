@@ -1,4 +1,6 @@
 PresentationSignup::Application.routes.draw do
+  resources :ratings
+
   resources :reviews
 
   # The priority is based upon order of creation:
