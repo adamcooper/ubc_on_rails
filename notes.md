@@ -26,5 +26,11 @@ comments:text name:string
 add gem 'bootstrap-sass' to Gemfile
 change application.css to 'require bootstrap'
 add <div class="container"> to body
+update all the forms for twitter bootstap - maybe jump to a commit...
+
+
+# deploy
+add gem 'heroku' to the rails file
+move 'sqlite' to the development group
 
 
