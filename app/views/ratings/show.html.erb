@@ -8,5 +8,7 @@
 </blockquote>
 
 
-<%= link_to 'Edit', edit_rating_path(@rating) %> |
-<%= link_to 'Back', ratings_path %>
+<div class="actions">
+  <%= link_to 'Edit', edit_rating_path(@rating), :class => 'btn' %>
+  <%= link_to 'Back', ratings_path, :class => 'btn' %>
+</div>
