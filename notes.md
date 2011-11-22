@@ -13,7 +13,14 @@ git commit -m "initial commit"
 
 # Personalization for Me
 
-* add 'rspec-rails' to gemfile
-* rm -rf test/
+add 'rspec-rails' to gemfile
+rm -rf test/
+rails generate rspec:install
+
+# add a model
+rails generate scaffold ratings summary:string rating:integer
+comments:text name:string
+
+
 
 
