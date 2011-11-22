@@ -10,24 +10,41 @@
       </ul>
     </div>
   <% end %>
+  <fieldset>
+    <legend>Rating details</legend>
+    <div class="clearfix">
+      <%= f.label :name %>
+      <div class="input">
+        <%= f.text_field :name, :class => 'xxlarge' %>
+      </div>
+    </div>
+    <div class="clearfix">
+      <%= f.label :title %>
+      <div class="input">
+        <%= f.text_field :title, :class => 'xxlarge' %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :stars %><br />
-    <%= f.number_field :stars %>
-  </div>
-  <div class="field">
-    <%= f.label :comments %><br />
-    <%= f.text_area :comments %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="clearfix">
+      <%= f.label :stars %>
+      <div class="input">
+        <%= f.select :stars, [1,2,3,4,5], :class => 'xxlarge' %>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label :comments %>
+      <div class="input">
+        <%= f.text_area :comments, :class => 'xxlarge' %>
+        <span class="help-block">
+          Please enter some nice comments so I can improve
+        </span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= f.submit :class => 'btn primary' %>
+      <%= link_to 'Cancel', ratings_url, :class => 'btn' %>
+    </div>
+</fieldset>
 <% end %>

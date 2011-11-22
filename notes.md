@@ -22,5 +22,9 @@ rails generate scaffold ratings summary:string rating:integer
 comments:text name:string
 
 
+# make it look pretty
+add gem 'bootstrap-sass' to Gemfile
+change application.css to 'require bootstrap'
+add <div class="container"> to body
 
 

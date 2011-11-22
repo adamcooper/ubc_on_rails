@@ -1,24 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @rating.title %>
-</p>
+  <h1><%= @rating.title %></h1>
 
-<p>
-  <b>Stars:</b>
-  <%= @rating.stars %>
-</p>
-
-<p>
-  <b>Comments:</b>
-  <%= @rating.comments %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= @rating.name %>
-</p>
+<blockquote>
+  <p><%= @rating.comments %></p>
+  <small><%= @rating.name %> - <%= @rating.stars %> stars</small>
+</blockquote>
 
 
 <%= link_to 'Edit', edit_rating_path(@rating) %> |
