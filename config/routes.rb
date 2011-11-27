@@ -1,7 +1,8 @@
 PresentationSignup::Application.routes.draw do
+
   resources :ratings
 
-  resources :reviews
+  get "download" => "about#download", :as => :download
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -52,7 +53,7 @@ PresentationSignup::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'ratings#index'
+  root :to => 'about#about'
 
   # See how all your routes lay out with "rake routes"
 

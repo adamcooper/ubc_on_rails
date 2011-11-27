@@ -44,6 +44,7 @@ class RatingsController < ApplicationController
 
     respond_to do |format|
       if @rating.save
+        session[:has_rated] = true
         format.html { redirect_to @rating, notice: 'Rating was successfully created.' }
         format.json { render json: @rating, status: :created, location: @rating }
       else

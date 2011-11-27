@@ -78,10 +78,12 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
         help_block = help_block(options.delete(:help_block)) || ''
         wrapperClass = 'clearfix' + (errorText.empty? ? '' : ' error')
         errorSpan = if errorText.empty? then "" else "<span class='help-inline'>#{errorText}</span>" end
+        field_params = args + [options]
+              Rails.logger.debug "#{field_params.inspect}"
         ("<div class='#{wrapperClass}'>" +
             label +
             "<div class='input'>" +
-              super(field, options) +
+              super(field, *field_params) +
               errorSpan +
               help_block +
             "</div>" +

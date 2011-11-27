@@ -1,4 +1,5 @@
 class Rating < ActiveRecord::Base
 
-  validates :name, :presence => true
+  validates :name, :comments, presence: true
+
 end
